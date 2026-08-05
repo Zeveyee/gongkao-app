@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#9698E7"/>
+  <text x="256" y="300" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="220" font-weight="700" fill="#FFFFFF" text-anchor="middle">考</text>
+  <circle cx="380" cy="380" r="40" fill="#EECIDD" opacity="0.9"/>
+  <circle cx="130" cy="130" r="28" fill="#D1D0EF" opacity="0.9"/>
+</svg>
