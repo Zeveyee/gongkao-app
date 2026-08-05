@@ -1,0 +1,45 @@
+/* ===== 体重记录页面 ===== */
+.weight-history-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+  background: var(--bg);
+}
+.weight-history-item .date {
+  flex: 1;
+}
+.weight-history-item .date .d {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+.weight-history-item .date .w {
+  font-size: 11px;
+  color: var(--text-light);
+}
+.weight-history-item .vals {
+  text-align: right;
+  font-size: 14px;
+}
+.weight-history-item .vals .morning {
+  color: var(--primary);
+  font-weight: 600;
+}
+.weight-history-item .vals .evening {
+  color: var(--secondary);
+  font-weight: 600;
+}
+.weight-history-item .vals .unit {
+  font-size: 11px;
+  color: var(--text-light);
+}
+.weight-history-item .del-btn {
+  margin-left: 8px;
+  border: none;
+  background: transparent;
+  color: var(--danger);
+  font-size: 12px;
+  cursor: pointer;
+}
