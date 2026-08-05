@@ -1,0 +1,131 @@
+/* ===== 阶段备考总览页面 ===== */
+.stage-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.stage-card:active { opacity: 0.9; }
+.stage-card .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.stage-card .name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.stage-card .range {
+  font-size: 12px;
+  color: var(--text-light);
+}
+.stage-card .progress-section {
+  margin-top: 10px;
+}
+.stage-card .progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-bottom: 4px;
+}
+.stage-card .progress-label .pct {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.stage-modules {
+  margin-top: 12px;
+  display: none;
+}
+.stage-modules.show {
+  display: block;
+}
+
+.module-check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 6px;
+  background: var(--bg);
+}
+.module-check-item .check-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.module-check-item .check-circle.lit {
+  background: var(--primary);
+}
+.module-check-item .check-circle.lit::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.module-check-item .m-name {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-main);
+}
+.module-check-item.lit .m-name {
+  color: var(--primary);
+  font-weight: 500;
+}
+.module-check-item .m-actions {
+  display: flex;
+  gap: 4px;
+}
+.module-check-item .m-actions button {
+  font-size: 11px;
+  padding: 2px 8px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.stage-global-summary {
+  text-align: center;
+  padding: 20px;
+}
+.stage-global-summary .big-num {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.stage-global-summary .label {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-top: 4px;
+}
+.countdown-box {
+  text-align: center;
+  padding: 16px;
+  background: var(--tertiary);
+  border-radius: var(--radius);
+  margin-top: 12px;
+}
+.countdown-box .num {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.countdown-box .label {
+  font-size: 13px;
+  color: var(--text-sub);
+}
