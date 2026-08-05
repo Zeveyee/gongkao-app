@@ -1,0 +1,44 @@
+/* ===== 底部Tab导航 ===== */
+#tabbar {
+  display: flex;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  max-width: 100%;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+}
+
+.tab-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color 0.2s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.tab-item.active {
+  color: var(--primary);
+}
+
+.tab-item span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.tab-item svg {
+  opacity: 0.6;
+}
+.tab-item.active svg {
+  opacity: 1;
+}
